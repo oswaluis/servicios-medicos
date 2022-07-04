@@ -4,7 +4,7 @@ import fotoAbout from '../../assets/enfermero.jpg'
 
 const About = ({clicked}) => {
   return (
-    <section id='about' className={`section ${clicked ? 'secAct' : ''}`}>
+    <section id='about' className={`section ${clicked ? 'secAct' : 'secOut'}`}>
         <div className="containerAbout">
             <div className="imgAbout">
                 <img src={fotoAbout} alt="Enfermero domiciliario"  />

@@ -1,4 +1,10 @@
-[33mcommit 2dd60fdb8875005b7966191bab0c843e1d214012[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+[33mcommit 169432b88a13c0d7f98bfc3fb5ba9fed7c1c0b22[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Oswaldo Mendez <oswaluis8@gmail.com>
+Date:   Mon Jul 4 15:09:49 2022 -0300
+
+    agregamos about section
+
+[33mcommit 2dd60fdb8875005b7966191bab0c843e1d214012[m
 Author: Oswaldo Mendez <oswaluis8@gmail.com>
 Date:   Mon Jul 4 14:25:02 2022 -0300
 

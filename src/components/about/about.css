@@ -37,6 +37,7 @@
 }
 
 .section{
+    visibility: visible;
     transition: var(--transition);
 }
 @media screen and (max-width:960px){
@@ -51,8 +52,12 @@
         margin: auto 0;
     }
     .secAct{
-        opacity:0 ;
+        animation: sale 400ms ease-in-out forwards;
     }
+    .secOut{
+        animation: entra 400ms ease-in-out forwards;
+    }
+
 }
 
 @media screen and (max-width:600px){
@@ -77,6 +82,39 @@
         min-width: 18rem;
     }
     .secAct{
-        opacity: 0;
+        animation: sale 400ms ease-in-out forwards;
     }
+    .secOut{
+        animation: entra 400ms ease-in-out forwards;
+    }
+
 }
+
+    @keyframes sale {
+        from{
+            visibility: visible;
+            opacity:1 ;
+        }
+        99%{
+            visibility: visible;
+            opacity: 0;
+        }
+        to{
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+    @keyframes entra{
+        from{
+            visibility: hidden;
+            opacity: 0;
+        }
+        1%{
+            visibility: visible;
+            opacity: 0;
+        }
+        to{
+            visibility: visible;
+            opacity: 1;
+        }
+    } 

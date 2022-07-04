@@ -21,7 +21,7 @@ const Header = ({clicked, handleClick}) => {
             </div>
             <div className="menuHamburger">
                 <ul className={`listaMenuHamburger ${clicked ? 'active' : ''}`}>
-                    <li className="itemListHamburger"><a onClick={handleClick} className='btnListHamburger' href="#">Quienes Somos</a></li>
+                    <li className="itemListHamburger"><a onClick={handleClick} className='btnListHamburger' href="#about">Quienes Somos</a></li>
                     <li className="itemListHamburger"><a onClick={handleClick} className='btnListHamburger' href="#">Sevicios</a></li>
                     <li className="itemListHamburger"><a onClick={handleClick} className='btnListHamburger' href="#">Nuestro Personal</a></li>
                     <li className="itemListHamburger"><a onClick={handleClick} className='btnListHamburger' href="#">Preguntas Frecuentes</a></li>
