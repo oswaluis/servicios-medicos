@@ -1,8 +1,19 @@
 import React from 'react'
+import { useState } from 'react'
+import Header from './components/header/Header'
 
 const App = () => {
+  const [clicked, setClicked] = useState(false)
+  const handleClick = ()=>{
+    setClicked(!clicked)
+  }
   return (
-    <div>App</div>
+    <>
+      <Header
+      clicked={clicked}
+      handleClick={handleClick}
+      setClicked={setClicked} />
+    </>
   )
 }
 

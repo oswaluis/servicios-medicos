@@ -1,0 +1,119 @@
+.containerHeader{
+    display: flex;
+    overflow: hidden;
+    background: var(--color-bg);
+    justify-content: space-between;
+    height: 10rem;
+    align-items: center;
+}
+.logoHeader{
+    height: 100%;
+}
+.logoHeader img{
+    height: 100%;
+    padding: 1.2rem;
+}
+
+.menuHeader{
+    margin-right: 1.2rem;
+}
+
+.listaMenuHeader{
+    display: flex;
+}
+
+.itemList{
+    margin-right: 1rem;
+    max-width: 8rem;
+    text-align: center;
+}
+
+.btnList{
+    height: 64.4px;
+    display: block;
+    color: var(--color-primary); 
+    padding: 1.1rem 1.2rem;
+    border-radius: 0.4rem;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+}
+
+.btnList:hover{
+    background: var(--color-primary);
+    color: var(--color-light);
+}
+
+.menuHamburger{
+    display: none;
+}
+
+.animationBg{
+    display: none;
+}
+@media screen and (max-width:960px) {
+    .menuHeader{
+        display: none;
+    }
+    .logoHeader{
+        margin-left: 2rem;
+    }
+    .menuHamburger{
+        display: block;
+    }
+    .listaMenuHamburger{
+        position: absolute;
+        top: -700px;
+        left: -1700px;
+        opacity: 0;
+    }
+    .btnListHamburger{
+        height: auto;
+        display: block;
+        color: var(--color-bg);
+        padding: 0.5rem 0.5rem;
+        text-align: center;
+        font-size: 1.2rem;
+        border: 1px solid var(--color-bg);
+        border-radius: 0.4rem;
+        margin-bottom: 0.5rem;
+        transition: var(--transition);
+    }
+    .btnListHamburger:hover{
+        color: var(--color-primary);
+        background: var(--color-bg);
+    }
+    .active{
+        margin-left: auto ;
+        margin-right: auto;
+        top: 30%;
+        left: 50%;
+        opacity: 1;
+        transform: translateX(-50%);
+        text-align: center;
+        transition: var(--transition);
+} 
+
+.animationBg{
+    display: block;
+    position: absolute;
+    background-color: var(--color-primary);
+    top: -1000px;
+    left:-1000px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: var(--transition);
+    margin: 0;
+} 
+
+.act{
+    border-radius: 0 0 90% 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+}
+
