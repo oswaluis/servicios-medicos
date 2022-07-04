@@ -1,4 +1,10 @@
-[33mcommit 5906b5e8214682f477e5fa666f74060b4aa382ea[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+[33mcommit 2dd60fdb8875005b7966191bab0c843e1d214012[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Oswaldo Mendez <oswaluis8@gmail.com>
+Date:   Mon Jul 4 14:25:02 2022 -0300
+
+    creado menu
+
+[33mcommit 5906b5e8214682f477e5fa666f74060b4aa382ea[m
 Author: Oswaldo Mendez <oswaluis8@gmail.com>
 Date:   Mon Jul 4 12:20:23 2022 -0300
 

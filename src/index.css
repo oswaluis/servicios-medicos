@@ -22,3 +22,6 @@ body{
   font-family: 'Josefin Sans', sans-serif;
   background: var(--color-bg);
 }
+html {
+  scroll-behavior: smooth;
+}

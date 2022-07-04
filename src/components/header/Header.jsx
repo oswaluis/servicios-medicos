@@ -12,7 +12,7 @@ const Header = ({clicked, handleClick}) => {
             </div>
             <div className="menuHeader">
                 <ul className="listaMenuHeader">
-                    <li className="itemList"><a className='btnList' href="#">Quienes Somos</a></li>
+                    <li className="itemList"><a className='btnList' href="#about">Quienes Somos</a></li>
                     <li className="itemList"><a className='btnList' href="#">Sevicios</a></li>
                     <li className="itemList"><a className='btnList' href="#">Nuestro Personal</a></li>
                     <li className="itemList"><a className='btnList' href="#">Preguntas Frecuentes</a></li>
@@ -21,11 +21,11 @@ const Header = ({clicked, handleClick}) => {
             </div>
             <div className="menuHamburger">
                 <ul className={`listaMenuHamburger ${clicked ? 'active' : ''}`}>
-                    <li className="itemListHamburger"><a className='btnListHamburger' href="#">Quienes Somos</a></li>
-                    <li className="itemListHamburger"><a className='btnListHamburger' href="#">Sevicios</a></li>
-                    <li className="itemListHamburger"><a className='btnListHamburger' href="#">Nuestro Personal</a></li>
-                    <li className="itemListHamburger"><a className='btnListHamburger' href="#">Preguntas Frecuentes</a></li>
-                    <li className="itemListHamburger"><a className='btnListHamburger' href="#">Contactanos</a></li>
+                    <li className="itemListHamburger"><a onClick={handleClick} className='btnListHamburger' href="#">Quienes Somos</a></li>
+                    <li className="itemListHamburger"><a onClick={handleClick} className='btnListHamburger' href="#">Sevicios</a></li>
+                    <li className="itemListHamburger"><a onClick={handleClick} className='btnListHamburger' href="#">Nuestro Personal</a></li>
+                    <li className="itemListHamburger"><a onClick={handleClick} className='btnListHamburger' href="#">Preguntas Frecuentes</a></li>
+                    <li className="itemListHamburger"><a onClick={handleClick} className='btnListHamburger' href="#">Contactanos</a></li>
                 </ul>
             </div>
             <Hamburger clicked={clicked} handleClick={handleClick}/>
