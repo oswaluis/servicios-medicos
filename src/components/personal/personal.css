@@ -1,0 +1,110 @@
+.containerPersonal{
+    display: flex;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.containerImgPersonal{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.titlePersonal{
+    font-size: 2rem;
+    color: var(--color-dark);
+}
+
+.imgPersonal1{
+    width: auto;
+    height: 300px;
+    border: 1px solid var(--color-primary);
+    border-radius: 5% 0 0 5%;
+}
+
+.imgPersonal1 img {
+    height: 100%;
+    border-radius: 5% 0 0 5%;
+}
+.imgPersonal2{
+    width: auto;
+    height: 300px;
+    border: 1px solid var(--color-primary);
+    border-radius: 0 5%  5% 0;
+}
+.imgPersonal2 img{
+    height: 100%;
+    border-radius: 0 5%  5% 0;
+}
+
+.contentPersonal{
+    line-height: 1.8rem;
+    text-align: justify;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width:960px){
+    .containerPersonal{
+        flex-direction: column
+    }
+    .titlePersonal{
+        font-size: 1.5rem;
+    }
+    .contentPersonal{
+        font-size: 1rem;
+        min-width: 18rem;
+    }
+    .containerImgPersonal{
+        flex-direction: column;
+    }
+    .imgPersonal1{
+        border-radius: 5%  5% 0 0;
+    }
+    .imgPersonal1 img{
+        border-radius: 5%  5% 0 0;
+    }
+    .imgPersonal2{
+        border-radius:0 0 5%  5% ;
+    }
+    .imgPersonal2 img{
+        border-radius:0 0 5%  5% ;
+    }
+}
+
+@media screen and (max-width:600px){
+    .titlePersonal{
+        font-size: 1.1rem;
+    }
+    .containerPersonal{
+        flex-direction: column;
+    }
+    .imgPersonal{
+        width: 18rem;
+        margin: 0 auto;
+        
+    }
+    .imgPersonal img{
+        width: 100%;
+    } 
+    .textPersonal{
+        padding-top:0 ;
+    }
+    .contentPersonal{
+        min-width: 18rem;
+        line-height: 1.5rem;
+    }
+    .imgPersonal1{
+        height: 200px;
+    }
+    .imgPersonal1 img{
+        border-radius: 5%  5% 0 0;
+    }
+    .imgPersonal2{
+        height: 200px;
+    }
+    .imgPersonal2 img{
+        border-radius:0 0 5%  5% ;
+    }
+}

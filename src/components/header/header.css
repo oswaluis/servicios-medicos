@@ -1,10 +1,15 @@
+#header{
+    top: -1rem;
+    position: sticky;
+}
 .containerHeader{
     display: flex;
     overflow: hidden;
     background: var(--color-bg);
     justify-content: space-between;
-    height: 10rem;
+    height: 8rem;
     align-items: center;
+    margin-bottom: 2rem;
 }
 .logoHeader{
     height: 100%;
@@ -53,6 +58,9 @@
     display: none;
 }
 @media screen and (max-width:960px) {
+    #header{
+    position: unset;
+    }
     .menuHeader{
         display: none;
     }
