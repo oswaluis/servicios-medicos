@@ -1,6 +1,8 @@
 import React from 'react'
 import './service.css'
 import imagenServicios from '../../assets/jeringa1.png'
+import Cards from '../cards/Cards'
+import {FaHandHoldingMedical, FaSyringe} from 'react-icons/fa'
 
 const Service = () => {
   return (
@@ -9,11 +11,27 @@ const Service = () => {
             <div className="textService">
                 <h2 className="titleService">Nuestros Servicios</h2>
                 <p className="contentService">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, eveniet a quae nulla velit perferendis amet, modi sunt autem debitis excepturi magni officia, aliquam obcaecati magnam itaque exercitationem odio fugit.
-                    Excepturi saepe aperiam, dignissimos earum quas magnam modi ullam laudantium impedit quam ipsam quidem voluptate doloremque tempore officia nobis inventore sed laboriosam rem iusto suscipit sit necessitatibus assumenda voluptatem. Maxime?
-                    Deleniti sit ab minima mollitia suscipit eaque ducimus excepturi. Adipisci earum odit excepturi at esse totam doloremque fugiat, aliquid saepe provident placeat illo praesentium animi blanditiis aperiam aspernatur ducimus commodi.
-                    Rerum atque hic reiciendis deleniti nihil, adipisci quia, placeat commodi ex tempore eligendi, quae voluptates facere consectetur aliquid rem! Eum eos ratione asperiores, debitis pariatur hic explicabo harum eaque. Iste!
+                    Brindamos un servicio de primera calidad, personalizado que permite adecuarse a las necesidades particulares de cada persona.
                 </p>
+                <div className="cards">
+                      <div className="containerCards">
+                    <div className="iconCard"><FaSyringe/></div>
+                    <Cards 
+                    title='Internación domiciliaria'
+                    prop='Control de SV'
+                    prop1='Administracion de tratamiento'
+                    prop2='Higiene y Confort'/>
+                </div>
+                <div className="containerCards">
+                    <div className="iconCard"><FaHandHoldingMedical/></div>
+                    <Cards 
+                    title='Cuidadores'
+                    prop='Curas de heridas'
+                    prop1='Acompañamiento'
+                    prop2='Higiene y confort'/>
+                </div>               
+                </div>
+              
             </div>
             <div className="imgService">
                 <img src={imagenServicios} alt="Servicios Prestados" />

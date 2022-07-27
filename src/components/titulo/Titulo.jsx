@@ -3,7 +3,7 @@ import './titulo.css'
 
 const Titulo = () => {
   return (
-    <h1>Enfermeria y cuidados domiciliarios</h1>
+    <h1>Servicio integral de enfermería y cuidados domiciliarios</h1>
   )
 }
 

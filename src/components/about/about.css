@@ -12,12 +12,19 @@
     height: 500px;
     border: 1px solid var(--color-primary);
     border-radius: 5% 5% 0 0 ;
-}
-.imgAbout img{
-    height: 100%;
-    border-radius:5% 5% 0 0 ;
+
+    
 }
 
+.imgAbout img{
+    object-fit: cover;
+    height: 100%;
+    border-radius:5% 5% 0 0 ;
+    transition: var(--transition);
+}
+.imgAbout img:hover{
+    transform: scale(1.05);
+}
 .textAbout{
     padding-top: 2rem;
     display: flex;
@@ -28,14 +35,22 @@
 
 .titleAbout{
     font-size: 2rem;
-    color: var(--color-dark);
+    color: var(--color-primary);
 }
 
 .contentAbout{
-    line-height: 1.8rem;
+    margin-top: 2rem;
+    line-height: 2.5rem;
     text-align: justify;
-    padding: 0 1rem;
-    font-size: 1.2rem;
+    padding: 0 3rem;
+    font-size: 1.6rem;
+    font-weight: 200;
+    
+}
+.contentAbout h5{
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    font-weight: 200;
 }
 
 .section{
@@ -51,10 +66,7 @@
     .titleAbout{
         font-size: 1.5rem;
     }
-    .contentAbout{
-        font-size: 1rem;
-        min-width: 18rem;
-    }
+
     .imgAbout{
         height: 25rem;
         margin-top: 6rem;
@@ -86,9 +98,11 @@
     .textAbout{
         padding-top:0 ;
     }
-    .contentAbout{
+    .contentAbout, .contentAbout h5{
+        text-align: justify;
         min-width: 18rem;
-        line-height: 1.5rem;
+        line-height: 1.2;
+        font-size: 1.2rem;
     }
     .secAct{
         animation: sale 400ms ease-in-out forwards;

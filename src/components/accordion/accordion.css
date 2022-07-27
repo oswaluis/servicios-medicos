@@ -1,0 +1,57 @@
+.qanda{
+    display: flex;
+    flex-direction: column;
+}
+.conta{
+    width: 60%;
+}
+.titleAccordion{
+    font-size: 2rem;
+    color: var(--color-primary);
+    text-align: center;
+}
+.wrap span{
+    font-size: 2rem;
+}
+.wrap h3{
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width:960px){
+    .conta{
+        width: 80%;
+    }
+    .wrap{
+        padding: 0.8rem;
+        gap: 1rem;
+        
+    }
+    .wrap h3{
+        font-size: 0.9rem;
+    }
+    .wrap span{
+        font-size: 1.5rem;
+    }
+    .drop{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width:600px){
+    .conta{
+        width: 80%;
+    }
+    .wrap{
+        padding: 0.8rem;
+        gap: 1rem;
+        
+    }
+    .wrap h3{
+        font-size: 0.9rem;
+    }
+    .wrap span{
+        font-size: 1.5rem;
+    }
+    .drop{
+        font-size: 1.1rem;
+    }
+}

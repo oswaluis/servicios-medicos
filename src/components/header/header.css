@@ -1,7 +1,4 @@
-#header{
-    top: -1rem;
-    position: sticky;
-}
+
 .containerHeader{
     display: flex;
     overflow: hidden;
@@ -34,6 +31,7 @@
 }
 
 .btnList{
+    
     height: 64.4px;
     display: block;
     color: var(--color-primary); 

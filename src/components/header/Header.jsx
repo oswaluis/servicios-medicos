@@ -15,7 +15,7 @@ const Header = ({clicked, handleClick}) => {
                     <li className="itemList"><a className='btnList' href="#about">Quienes Somos</a></li>
                     <li className="itemList"><a className='btnList' href="#service">Sevicios</a></li>
                     <li className="itemList"><a className='btnList' href="#personal">Nuestro Personal</a></li>
-                    <li className="itemList"><a className='btnList' href="#">Preguntas Frecuentes</a></li>
+                    <li className="itemList"><a className='btnList' href="#answer">Preguntas Frecuentes</a></li>
                     <li className="itemList"><a className='btnList' href="#contact">Contactanos</a></li>
                 </ul>
             </div>
@@ -24,7 +24,7 @@ const Header = ({clicked, handleClick}) => {
                     <li className="itemListHamburger"><a onClick={handleClick} className='btnListHamburger' href="#about">Quienes Somos</a></li>
                     <li className="itemListHamburger"><a onClick={handleClick} className='btnListHamburger' href="#service">Sevicios</a></li>
                     <li className="itemListHamburger"><a onClick={handleClick} className='btnListHamburger' href="#personal">Nuestro Personal</a></li>
-                    <li className="itemListHamburger"><a onClick={handleClick} className='btnListHamburger' href="#">Preguntas Frecuentes</a></li>
+                    <li className="itemListHamburger"><a onClick={handleClick} className='btnListHamburger' href="#answer">Preguntas Frecuentes</a></li>
                     <li className="itemListHamburger"><a onClick={handleClick} className='btnListHamburger' href="#contact">Contactanos</a></li>
                 </ul>
             </div>
